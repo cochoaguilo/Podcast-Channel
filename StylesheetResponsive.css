@@ -1,0 +1,491 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM PLex Sans', sans-serif;
+  background-color: white; }
+
+a {
+  color: #000; }
+
+/* header */
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3; }
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff; }
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none; }
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4; }
+
+.header .logo {
+  margin-left: 5%;
+  margin-top: 3%;
+  display: block;
+  float: left;
+  font-size: 2em;
+  text-decoration: none; }
+
+/* menu */
+.header .menu {
+  clear: both;
+  max-height: 0;
+  background: blue;
+  transition: max-height .2s ease-out; }
+
+/* menu icon */
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  margin-right: 4%; }
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px; }
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%; }
+
+.header .menu-icon .navicon:before {
+  top: 5px; }
+
+.header .menu-icon .navicon:after {
+  top: -5px; }
+
+/* menu btn */
+.header .menu-btn {
+  display: none; }
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px; }
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent; }
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg); }
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg); }
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0; }
+
+.bloque1 {
+  position: relative;
+  top: 100px;
+  margin-left: 5%;
+  width: 80vw;
+  margin-bottom: 150px; }
+  .bloque1 h1 {
+    position: relative;
+    font-size: 42px;
+    width: 72%;
+    letter-spacing: 0;
+    line-height: 42px; }
+  .bloque1 #world {
+    text-decoration: line-through; }
+  .bloque1 p {
+    position: relative;
+    width: 100%;
+    text-align: justify;
+    line-height: 2em;
+    font-family: "IBM Plex Mono", "extra-light", "monospace";
+    font-weight: 100; }
+
+button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #00F3BB;
+  font-family: 'IBM Plex Mono';
+  font-weight: 500;
+  letter-spacing: 0;
+  text-align: center;
+  width: 86vw;
+  height: 56px;
+  font-size: 18px;
+  border: none; }
+
+#bloque2 {
+  width: 100vw;
+  display: flex;
+  position: relative; }
+  #bloque2 .fondo {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skew(0deg, -5deg);
+    top: -80px;
+    width: 100vw;
+    height: 200vh; }
+  #bloque2 .anti-skew {
+    transform: skew(0, 5deg); }
+    #bloque2 .anti-skew h2 {
+      color: white;
+      font-size: 4em;
+      letter-spacing: 0;
+      top: 2rem;
+      margin-left: 5%; }
+    #bloque2 .anti-skew .container-spotify {
+      margin-left: 3%;
+      width: 94vw; }
+
+#bloque3 {
+  position: relative;
+  margin-top: -8%; }
+  #bloque3 #phone {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-right: -5%;
+    width: 100vw;
+    height: 120vh; }
+  #bloque3 .textobloque3 {
+    position: relative;
+    top: -50px;
+    margin-left: 5%;
+    margin-right: 5%; }
+    #bloque3 .textobloque3 h3 {
+      position: relative;
+      width: 70%;
+      font-size: 42px;
+      line-height: 42px;
+      letter-spacing: 0;
+      color: #060A24; }
+    #bloque3 .textobloque3 p {
+      font-family: "IBM Plex Mono", "extra-light";
+      font-size: 18px;
+      font-weight: 100;
+      color: #060A24;
+      letter-spacing: 0;
+      line-height: 22px; }
+
+#bloque4 {
+  position: relative; }
+  #bloque4 h4 {
+    font-family: "IBM Plex Sans";
+    margin-left: 5%;
+    font-size: 42px; }
+  #bloque4 .container-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%; }
+    #bloque4 .container-imagenes img {
+      width: 100%;
+      max-width: 421.5px; }
+
+#bloque5 {
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%; }
+  #bloque5 h5 {
+    font-family: "IBM Plex Sans";
+    position: relative;
+    width: 90%;
+    font-size: 42px; }
+  #bloque5 #container-simbolos img {
+    width: 40vw; }
+  #bloque5 #container-simbolos p {
+    font-size: 28px; }
+
+#imgtrabajoremoto, #imgprogramacion, #imgcodigo, #imginfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#bloque6 {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  transform: skew(0, -5deg); }
+  #bloque6 .anti-skew {
+    transform: skew(0, 5deg);
+    margin-left: 5%; }
+    #bloque6 .anti-skew h6 {
+      position: relative;
+      font-size: 36px;
+      color: white;
+      text-align: center;
+      top: 20px;
+      width: 70%;
+      left: 50px; }
+    #bloque6 .anti-skew button {
+      position: relative;
+      top: -20px; }
+  #bloque6 .fondo {
+    position: relative;
+    top: -18px;
+    transform: skew(0, 5deg);
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%); }
+
+footer {
+  position: relative;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px; }
+  footer p {
+    font-family: "IBM Plex Mono", "extra-light";
+    font-weight: 100;
+    width: 80%;
+    font-size: 20px;
+    margin-top: 1rem;
+    text-align: center; }
+  footer .Iconosredes {
+    gap: 50px; }
+    footer .Iconosredes a {
+      margin: 0 16px;
+      text-decoration: none; }
+
+/* 48em = 768px */
+@media (min-width: 48em) {
+  body {
+    margin-left: 0;
+    margin-right: 0; }
+
+  .header {
+    position: relative; }
+    .header .logo {
+      margin-top: 1%; }
+
+  ul {
+    top: 0; }
+
+  .header li {
+    float: left; }
+
+  .header li a {
+    padding: 20px 30px; }
+
+  .header li a:hover {
+    color: #00F3BB;
+    text-decoration: line-through; }
+
+  .header li a:active {
+    color: rgba(6, 10, 36, 0.56);
+    text-decoration: line-through; }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+    background-color: white; }
+
+  .header .menu-icon {
+    display: none; }
+
+  .bloque1 {
+    position: relative;
+    width: 80vw;
+    margin-left: 100px;
+    margin-bottom: 300px; }
+    .bloque1 h1 {
+      position: absolute;
+      top: -50px;
+      font-size: 60px;
+      margin-bottom: 20px; }
+    .bloque1 #dot {
+      color: blue; }
+    .bloque1 p {
+      position: relative;
+      top: 50px;
+      width: 50%;
+      font-family: "IBM Plex Mono", "extra-light";
+      letter-spacing: 0;
+      line-height: 24px;
+      font-size: 16px;
+      text-justify: auto; }
+
+  button {
+    position: relative;
+    top: 50px;
+    width: 250px; }
+
+  button:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: white; }
+
+  #bloque2 {
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    /*fondo gradiente*/ }
+    #bloque2 .fondo {
+      background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+      transform: skew(0deg, -5deg);
+      height: 120vh;
+      position: absolute;
+      top: -80px;
+      z-index: -1;
+      width: 100%; }
+      #bloque2 .fondo .anti-skew {
+        transform: skew(0, 5deg); }
+        #bloque2 .fondo .anti-skew h2 {
+          position: absolute;
+          z-index: 0;
+          color: white;
+          font-size: 48px;
+          letter-spacing: 0;
+          margin-left: 100px;
+          top: 40px; }
+        #bloque2 .fondo .anti-skew .container-spotify {
+          position: absolute;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin: 50px;
+          z-index: +1;
+          gap: 50px;
+          margin-top: 10rem; }
+          #bloque2 .fondo .anti-skew .container-spotify iframe {
+            width: 46%; }
+
+  #bloque3 {
+    position: relative;
+    margin-top: 2%; }
+    #bloque3 #phone {
+      position: relative;
+      height: 660px;
+      width: 457.6px;
+      margin-left: 150px;
+      margin-top: 30px;
+      top: 30px; }
+    #bloque3 .textobloque3 {
+      position: absolute;
+      width: 32%;
+      margin: 2rem;
+      padding: 2rem;
+      margin-left: 50vw;
+      top: 140px;
+      margin-right: 50vw; }
+      #bloque3 .textobloque3 h3 {
+        font-size: 48px; }
+      #bloque3 .textobloque3 p {
+        font-family: "IBM Plex Mono", "extra-light";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0; }
+
+  #bloque4 {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+    #bloque4 h4 {
+      margin-left: 100px;
+      font-size: 48px; }
+
+  .container-imagenes {
+    margin: 0;
+    position: relative; }
+    .container-imagenes img {
+      width: 300px; }
+
+  #bloque5 {
+    margin-right: 0;
+    margin-left: 0;
+    height: 60vh; }
+    #bloque5 h5 {
+      font-size: 48px;
+      margin-left: 100px; }
+    #bloque5 #container-simbolos {
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 80%;
+      height: 300px;
+      display: flex;
+      flex-direction: row;
+      gap: 5%; }
+      #bloque5 #container-simbolos img {
+        margin: 1rem;
+        padding: 1rem;
+        width: 100px; }
+      #bloque5 #container-simbolos p {
+        text-align: center;
+        width: 17vw;
+        height: 10%; }
+
+  #bloque6 {
+    position: relative;
+    top: 100px;
+    /*fondo gradiente*/
+    transform: skew(0, -5deg);
+    height: 370px;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    #bloque6 .anti-skew {
+      transform: skew(0, 5deg);
+      margin-left: -5%; }
+    #bloque6 h6 {
+      width: 80vw;
+      font-size: 48px; }
+    #bloque6 button {
+      position: absolute;
+      height: 56px;
+      width: 25rem;
+      top: 170px;
+      align-self: center; }
+    #bloque6 .fondo {
+      position: absolute;
+      transform: skew(0, 5deg);
+      width: 100%;
+      height: 150px;
+      top: 300px; }
+
+  footer {
+    position: relative;
+    margin-top: 12rem;
+    position: relative;
+    background-color: white;
+    width: 100%; }
+    footer p {
+      position: relative;
+      width: 40%;
+      text-align: left;
+      left: -25%; }
+    footer .Iconosredes {
+      position: relative;
+      gap: 30px;
+      right: -35vw;
+      margin-right: 5%;
+      top: -45px; } }
+
+/*# sourceMappingURL=StylesheetResponsive.css.map */
